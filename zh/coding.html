@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>编程与数据项目 · Lumina Academic</title>
+  <meta name="description" content="数据分析、机器学习、数据看板和编程作业，代码有注释、易理解、可运行。">
+  <link rel="alternate" hreflang="en" href="../coding.html">
+  <link rel="alternate" hreflang="zh-Hans" href="../zh/coding.html">
+  <link rel="alternate" hreflang="es" href="../es/coding.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- Scroll-scrubbed background video: playback position follows page scroll -->
+  <div class="bg-video" aria-hidden="true">
+    <video src="../assets/background.mp4" muted playsinline preload="auto" disablepictureinpicture></video>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="../zh/index.html" aria-label="Lumina Academic 首页">
+        <img src="../assets/logo.svg" alt="" width="30" height="30">
+        <span>Lumina Academic</span>
+      </a>
+
+      <div class="nav-end">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../zh/index.html#services">服务</a></li>
+          <li><a href="../zh/cv-sop.html">简历与文书</a></li>
+          <li><a href="../zh/research.html">学术研究</a></li>
+          <li><a href="../zh/assignments.html">作业与报告</a></li>
+          <li><a href="../zh/coding.html" aria-current="page">编程与数据</a></li>
+          <li><a class="nav-cta" href="../zh/quote.html">获取报价</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="语言">
+        <a href="../coding.html" hreflang="en" lang="en" title="English">EN</a>
+        <a href="../zh/coding.html" hreflang="zh-Hans" lang="zh-Hans" title="简体中文" aria-current="true">中文</a>
+        <a href="../es/coding.html" hreflang="es" lang="es" title="Español">ES</a>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="打开菜单">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="ticker">
+      <nav class="ticker-viewport" aria-label="全部服务">
+        <ul class="ticker-track">
+          <li><a href="../zh/services/cv.html">简历（CV）</a></li>
+          <li><a href="../zh/services/sop.html">目的陈述（SOP）</a></li>
+          <li><a href="../zh/services/personal-statement.html">个人陈述</a></li>
+          <li><a href="../zh/services/cover-letter.html">求职信</a></li>
+          <li><a href="../zh/services/research-paper.html">研究论文</a></li>
+          <li><a href="../zh/services/literature-review.html">文献综述</a></li>
+          <li><a href="../zh/services/research-poster.html">学术海报</a></li>
+          <li><a href="../zh/services/citations-formatting.html">引用与格式</a></li>
+          <li><a href="../zh/services/course-assignments.html">课程作业</a></li>
+          <li><a href="../zh/services/project-reports.html">项目报告</a></li>
+          <li><a href="../zh/services/lab-reports.html">实验报告</a></li>
+          <li><a href="../zh/services/project-portfolios.html">项目作品集</a></li>
+          <li><a href="../zh/services/data-analysis.html">Python 与数据分析</a></li>
+          <li><a href="../zh/services/machine-learning.html">机器学习</a></li>
+          <li><a href="../zh/services/dashboards.html">可视化与数据看板</a></li>
+          <li><a href="../zh/services/programming.html">编程作业</a></li>
+          <li aria-hidden="true"><a href="../zh/services/cv.html" tabindex="-1">简历（CV）</a></li>
+          <li aria-hidden="true"><a href="../zh/services/sop.html" tabindex="-1">目的陈述（SOP）</a></li>
+          <li aria-hidden="true"><a href="../zh/services/personal-statement.html" tabindex="-1">个人陈述</a></li>
+          <li aria-hidden="true"><a href="../zh/services/cover-letter.html" tabindex="-1">求职信</a></li>
+          <li aria-hidden="true"><a href="../zh/services/research-paper.html" tabindex="-1">研究论文</a></li>
+          <li aria-hidden="true"><a href="../zh/services/literature-review.html" tabindex="-1">文献综述</a></li>
+          <li aria-hidden="true"><a href="../zh/services/research-poster.html" tabindex="-1">学术海报</a></li>
+          <li aria-hidden="true"><a href="../zh/services/citations-formatting.html" tabindex="-1">引用与格式</a></li>
+          <li aria-hidden="true"><a href="../zh/services/course-assignments.html" tabindex="-1">课程作业</a></li>
+          <li aria-hidden="true"><a href="../zh/services/project-reports.html" tabindex="-1">项目报告</a></li>
+          <li aria-hidden="true"><a href="../zh/services/lab-reports.html" tabindex="-1">实验报告</a></li>
+          <li aria-hidden="true"><a href="../zh/services/project-portfolios.html" tabindex="-1">项目作品集</a></li>
+          <li aria-hidden="true"><a href="../zh/services/data-analysis.html" tabindex="-1">Python 与数据分析</a></li>
+          <li aria-hidden="true"><a href="../zh/services/machine-learning.html" tabindex="-1">机器学习</a></li>
+          <li aria-hidden="true"><a href="../zh/services/dashboards.html" tabindex="-1">可视化与数据看板</a></li>
+          <li aria-hidden="true"><a href="../zh/services/programming.html" tabindex="-1">编程作业</a></li>
+        </ul>
+      </nav>
+      <button class="ticker-toggle" type="button" aria-pressed="false" aria-label="暂停滚动的服务列表">
+        <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+        <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5Z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero-photo" style="background-image: url('../Images/2026-10-03_11-33-30_Lumina_1.jpg')" aria-hidden="true"></div>
+      <svg class="hero-star" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="22" fill="none" stroke="#d4af5f" stroke-width=".35"/><circle cx="24" cy="24" r="16" fill="none" stroke="#d4af5f" stroke-width=".25"/><path d="M24 9 26.6 21.4 39 24 26.6 26.6 24 39 21.4 26.6 9 24 21.4 21.4Z" fill="#e8c97a"/></svg>
+      <div class="container">
+        <div class="page-hero-inner">
+          <nav class="breadcrumb" aria-label="面包屑导航">
+            <ol>
+              <li><a href="../zh/index.html">首页</a></li>
+              <li><a href="../zh/index.html#services">服务</a></li>
+              <li><span aria-current="page">编程与数据项目</span></li>
+            </ol>
+          </nav>
+          <p class="eyebrow eyebrow-left"><span>技术</span></p>
+          <h1>编程与数据项目</h1>
+          <p class="page-tagline">你能讲清楚的整洁代码。</p>
+          <p class="page-lead">数据分析、机器学习、数据看板和编程作业，代码有注释、易理解、可运行。</p>
+          <ul class="stat-grid stat-grid-left" aria-label="编程与数据项目的服务">
+            <li><a href="../zh/services/data-analysis.html"><strong>数据</strong><span>Python 与数据分析</span></a></li>
+            <li><a href="../zh/services/machine-learning.html"><strong>机器学习</strong><span>机器学习</span></a></li>
+            <li><a href="../zh/services/dashboards.html"><strong>看板</strong><span>可视化与数据看板</span></a></li>
+            <li><a href="../zh/services/programming.html"><strong>代码</strong><span>编程作业</span></a></li>
+          </ul>
+          <div class="hero-actions hero-actions-left">
+            <a class="btn btn-primary" href="#offer">查看全部服务 <span aria-hidden="true">→</span></a>
+            <a class="btn btn-whatsapp" href="https://wa.me/601164557105?text=%E4%BD%A0%E5%A5%BD%20Lumina%20Academic%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E3%80%8C%E7%BC%96%E7%A8%8B%E4%B8%8E%E6%95%B0%E6%8D%AE%E9%A1%B9%E7%9B%AE%E3%80%8D%E6%96%B9%E9%9D%A2%E7%9A%84%E5%B8%AE%E5%8A%A9%E3%80%82" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp 联系</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-body">
+      <div class="container page-layout">
+        <div class="content-stack">
+          <section id="offer" aria-labelledby="offer-title">
+            <div class="block-head">
+              <p class="block-kicker">选择服务</p>
+              <h2 class="block-title" id="offer-title">我们提供的服务</h2>
+            </div>
+            <div class="sub-grid">
+              <a class="sub-card" href="../zh/services/data-analysis.html">
+                <span class="sub-art photo photo-contain fx"><img class="photo-blur" src="../Images/services/data-lifecycle.png" alt="" aria-hidden="true" loading="lazy"><img class="photo-main" src="../Images/services/data-lifecycle.png" alt="" loading="lazy"></span>
+                <h3>Python 与数据分析</h3>
+                <p>使用 Python、Pandas 和 NumPy 进行数据清洗、分析和统计。</p>
+                <ul class="sub-points">
+                  <li>数据清洗</li>
+                  <li>探索性分析</li>
+                  <li>统计检验</li>
+                </ul>
+                <span class="sub-more">了解更多 <span aria-hidden="true">→</span></span>
+              </a>
+              <a class="sub-card" href="../zh/services/machine-learning.html">
+                <span class="sub-art photo photo-cover fx"><img class="photo-main" src="../Images/services/code-blue.webp" alt="" loading="lazy"></span>
+                <h3>机器学习</h3>
+                <p>完成模型构建、训练和评估，并清楚说明结果。</p>
+                <ul class="sub-points">
+                  <li>数据准备</li>
+                  <li>模型训练</li>
+                  <li>模型评估</li>
+                </ul>
+                <span class="sub-more">了解更多 <span aria-hidden="true">→</span></span>
+              </a>
+              <a class="sub-card" href="../zh/services/dashboards.html">
+                <span class="sub-art photo photo-cover fx"><img class="photo-main" src="../Images/services/code-colorful.webp" alt="" loading="lazy"></span>
+                <h3>可视化与数据看板</h3>
+                <p>使用 Matplotlib、Seaborn、Plotly、Power BI 或 Tableau 制作图表和看板。</p>
+                <ul class="sub-points">
+                  <li>选择图表</li>
+                  <li>简洁设计</li>
+                  <li>交互看板</li>
+                </ul>
+                <span class="sub-more">了解更多 <span aria-hidden="true">→</span></span>
+              </a>
+              <a class="sub-card" href="../zh/services/programming.html">
+                <span class="sub-art photo photo-contain fx"><img class="photo-blur" src="../Images/services/code-terminal.png" alt="" aria-hidden="true" loading="lazy"><img class="photo-main" src="../Images/services/code-terminal.png" alt="" loading="lazy"></span>
+                <h3>编程作业</h3>
+                <p>Python、Java、C++、JavaScript 和 SQL 课程作业。</p>
+                <ul class="sub-points">
+                  <li>可运行的方案</li>
+                  <li>注释与可读性</li>
+                  <li>测试</li>
+                </ul>
+                <span class="sub-more">了解更多 <span aria-hidden="true">→</span></span>
+              </a>
+            </div>
+          </section>
+
+          <section aria-labelledby="process-title">
+            <div class="block-head">
+              <p class="block-kicker">简单流程</p>
+              <h2 class="block-title" id="process-title">服务流程</h2>
+            </div>
+            <ol class="steps steps-compact">
+              <li class="step"><span class="step-num" aria-hidden="true">1</span><h3><span class="sr-only">第 1 步：</span>发送需求</h3><p>填写报价表单，或通过 WhatsApp 发送你的要求和截止日期。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">2</span><h3><span class="sr-only">第 2 步：</span>获取报价</h3><p>我们审核你的需求，并回复价格和交付日期。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">3</span><h3><span class="sr-only">第 3 步：</span>开始工作</h3><p>你确认后我们立即开始，并随时向你更新进度。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">4</span><h3><span class="sr-only">第 4 步：</span>审阅与修改</h3><p>你收到完成的作品后，可以提出修改。</p></li>
+            </ol>
+          </section>
+
+          <section aria-labelledby="faq-title">
+            <div class="block-head">
+              <p class="block-kicker">常见问题</p>
+              <h2 class="block-title" id="faq-title">问答</h2>
+            </div>
+            <div class="faq">
+              <details><summary>代码会有注释吗？</summary><p>会。代码带有注释，我们还可以附上一份简短说明，解释代码如何运行。</p></details>
+              <details><summary>可以给我讲解解决方案吗？</summary><p>可以。我们可以通过通话或书面方式带你逐步理解代码。</p></details>
+              <details><summary>你们也写报告吗？</summary><p>写。我们可以同时交付代码和项目报告。</p></details>
+            </div>
+          </section>
+        </div>
+
+        <aside class="aside" aria-label="其他领域">
+          <div class="panel panel-quiet">
+            <h2>其他领域</h2>
+            <ul class="other-list">
+              <li><a href="../zh/cv-sop.html">简历与文书写作 <span aria-hidden="true">→</span></a></li>
+              <li><a href="../zh/research.html">研究论文 <span aria-hidden="true">→</span></a></li>
+              <li><a href="../zh/assignments.html">作业与报告 <span aria-hidden="true">→</span></a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="page-hero-photo" style="background-image: url('../Images/2026-10-03_11-30-57_Lumina_1.jpg')" aria-hidden="true"></div>
+      <div class="container">
+        <div class="ornament" aria-hidden="true"><span></span></div>
+        <h2 id="cta-title">不确定选哪项服务？</h2>
+        <p>告诉我们你的任务，我们会推荐合适的服务。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="../zh/quote.html#coding">申请报价 <span aria-hidden="true">→</span></a>
+          <a class="btn btn-whatsapp" href="https://wa.me/601164557105?text=%E4%BD%A0%E5%A5%BD%20Lumina%20Academic%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E3%80%8C%E7%BC%96%E7%A8%8B%E4%B8%8E%E6%95%B0%E6%8D%AE%E9%A1%B9%E7%9B%AE%E3%80%8D%E6%96%B9%E9%9D%A2%E7%9A%84%E5%B8%AE%E5%8A%A9%E3%80%82" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp 咨询</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a class="brand" href="../zh/index.html" aria-label="Lumina Academic 首页">
+            <img src="../assets/logo.svg" alt="" width="26" height="26">
+            <span>Lumina Academic</span>
+          </a>
+          <p class="footer-tag">为学生提供学术写作与项目支持，从申请材料到最终报告。</p>
+          <div class="footer-contacts">
+            <a href="https://wa.me/601164557105?text=%E4%BD%A0%E5%A5%BD%20Lumina%20Academic%EF%BC%8C%E6%88%91%E6%9C%89%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98%E3%80%82" target="_blank" rel="noopener"><svg class="wa-icon wa-green" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>+60 11-6455 7105</span></a>
+            <a href="mailto:alireza1708karami@gmail.com"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span>alireza1708karami@gmail.com</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h2><a href="../zh/cv-sop.html">简历与文书写作</a></h2>
+          <ul>
+            <li><a href="../zh/services/cv.html">简历（CV）</a></li>
+            <li><a href="../zh/services/sop.html">目的陈述（SOP）</a></li>
+            <li><a href="../zh/services/personal-statement.html">个人陈述</a></li>
+            <li><a href="../zh/services/cover-letter.html">求职信</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2><a href="../zh/research.html">研究论文</a></h2>
+          <ul>
+            <li><a href="../zh/services/research-paper.html">研究论文</a></li>
+            <li><a href="../zh/services/literature-review.html">文献综述</a></li>
+            <li><a href="../zh/services/research-poster.html">学术海报</a></li>
+            <li><a href="../zh/services/citations-formatting.html">引用与格式</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2><a href="../zh/assignments.html">作业与报告</a></h2>
+          <ul>
+            <li><a href="../zh/services/course-assignments.html">课程作业</a></li>
+            <li><a href="../zh/services/project-reports.html">项目报告</a></li>
+            <li><a href="../zh/services/lab-reports.html">实验报告</a></li>
+            <li><a href="../zh/services/project-portfolios.html">项目作品集</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2><a href="../zh/coding.html">编程与数据项目</a></h2>
+          <ul>
+            <li><a href="../zh/services/data-analysis.html">Python 与数据分析</a></li>
+            <li><a href="../zh/services/machine-learning.html">机器学习</a></li>
+            <li><a href="../zh/services/dashboards.html">可视化与数据看板</a></li>
+            <li><a href="../zh/services/programming.html">编程作业</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Lumina Academic. 版权所有。</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/601164557105?text=%E4%BD%A0%E5%A5%BD%20Lumina%20Academic%EF%BC%8C%E6%88%91%E6%83%B3%E5%9C%A8%E5%AD%A6%E4%B8%9A%E4%B8%8A%E8%8E%B7%E5%BE%97%E5%B8%AE%E5%8A%A9%E3%80%82" target="_blank" rel="noopener" aria-label="通过 WhatsApp 联系我们">
+    <svg class="wa-float-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
