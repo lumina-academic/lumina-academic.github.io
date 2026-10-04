@@ -1,6 +1,6 @@
 /* Lumina Academic
-   Layout: dark navy "reading room" — a scroll-scrubbed library video behind everything,
-   centered ceremonial hero on the home page, left-aligned photo heroes with a fact strip on inner pages. */
+   Layout: dark navy "reading room" with a scroll-scrubbed library video behind everything;
+   every page is centered on one axis (see "Centered layout" at the end). */
 
 /* ===== Tokens ===== */
 :root {
@@ -102,9 +102,9 @@ p { margin: 0; }
 .nav-end { display: flex; align-items: center; gap: 18px; }
 
 /* Language switch: EN / 中文 / ES */
-.lang-switch { display: flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid var(--border-strong); border-radius: 999px; }
+.lang-switch { flex: none; display: flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid var(--border-strong); border-radius: 999px; }
 .lang-switch a {
-  display: grid; place-items: center; min-width: 38px; min-height: 30px; padding: 4px 9px; border-radius: 999px;
+  display: grid; place-items: center; min-width: 38px; min-height: 30px; padding: 4px 9px; border-radius: 999px; white-space: nowrap;
   font-size: 0.76rem; font-weight: 600; letter-spacing: 0.06em; text-decoration: none; color: var(--muted);
   transition: background 0.2s var(--ease), color 0.2s var(--ease);
 }
@@ -670,3 +670,69 @@ html[lang^="zh"] h1, html[lang^="zh"] h2 { letter-spacing: 0.06em; }
   .fx::before { display: none; }
   *, *::before, *::after { transition-duration: 0.01ms !important; }
 }
+
+/* ===== Centered layout =====
+   Everything sits on one center axis: inner-page heroes, a single centered content column
+   (aside panels follow below it), centered cards and footer. Forms, checklists and FAQ answers
+   stay left-aligned inside their centered boxes so they remain easy to read and fill in. */
+
+/* Inner page hero */
+.page-hero { text-align: center; }
+.page-hero::before {
+  background:
+    radial-gradient(ellipse 55% 70% at 50% 30%, rgba(212, 175, 95, 0.24), transparent 70%),
+    rgba(10, 10, 11, 0.8);
+}
+.page-hero::after {
+  -webkit-mask-image: radial-gradient(ellipse 60% 80% at 50% 40%, #000 0%, transparent 75%);
+  mask-image: radial-gradient(ellipse 60% 80% at 50% 40%, #000 0%, transparent 75%);
+}
+.hero-star { right: auto; left: 50%; transform: translate(-50%, -50%); }
+.page-hero-inner { margin-inline: auto; }
+.page-hero-grid { grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 36px; }
+.art-frame { justify-self: center; }
+.breadcrumb ol { justify-content: center; }
+.eyebrow-left { justify-content: center; }
+.eyebrow-left::after { display: block; }
+.page-lead { margin-inline: auto; }
+.stat-grid-left { max-width: 760px; margin: 32px auto 0; text-align: center; }
+.hero-actions-left { justify-content: center; }
+
+/* One centered content column; aside panels follow underneath */
+.page-layout { grid-template-columns: minmax(0, 1fr); max-width: 920px; }
+.aside { position: static; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { text-align: center; }
+.panel-contacts, .other-list { text-align: left; }
+
+.block-head { justify-items: center; text-align: center; }
+.block-title { justify-self: stretch; justify-content: center; text-align: center; }
+.block-title::before { content: ""; flex: 1; height: 1px; background: linear-gradient(270deg, var(--border-strong), transparent); }
+
+.simple-words { text-align: center; }
+.overview { justify-items: center; text-align: center; border-left: 1px solid var(--border); border-top: 2px solid var(--accent); border-radius: 0 0 var(--radius) var(--radius); }
+.overview p:first-child::first-letter { float: none; margin: 0; font-size: inherit; line-height: inherit; text-shadow: none; font-family: inherit; font-weight: inherit; color: inherit; }
+
+.feature { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; gap: 12px; }
+.feature .icon-badge { grid-row: auto; }
+.audience li { justify-items: center; text-align: center; }
+
+/* Steps: centered markers, connector runs marker-to-marker across the 20px gap */
+.step { justify-items: center; text-align: center; }
+.step:not(:last-child)::after { left: calc(50% + 34px); right: calc(-50% + 14px); }
+
+.sub-card { text-align: center; }
+.sub-card .sub-points { justify-items: center; }
+.sub-more { justify-self: center; }
+
+/* Home service cards */
+.service-body { text-align: center; }
+.service-list { text-align: left; }
+.service-link { align-self: center; }
+
+.form-head { text-align: center; }
+
+/* Footer */
+.footer-col { justify-items: center; text-align: center; }
+.footer-tag { margin-inline: auto; }
+.footer-contacts { display: grid; justify-items: center; }
+.footer-bottom { text-align: center; }
