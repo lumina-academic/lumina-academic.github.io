@@ -738,9 +738,11 @@ html[lang^="zh"] h1, html[lang^="zh"] h2 { letter-spacing: 0.06em; }
 .footer-contacts { display: grid; justify-items: center; }
 .footer-bottom { text-align: center; }
 
-/* Digits sit dead-center in their circles: lining figures (Cormorant's default old-style ones
-   drop below the line) and a line box trimmed to the glyphs */
-.step-num, .mini-steps li::before { line-height: 1; font-variant-numeric: lining-nums; text-box: trim-both cap alphabetic; }
+/* Lining figures everywhere: Cormorant's default old-style digits sit at uneven heights (1 short, 3/4 dropping) */
+body { font-variant-numeric: lining-nums; }
+/* Numbers in circles sit dead-center: line box trimmed to the glyphs */
+.step-num, .mini-steps li::before { line-height: 1; text-box: trim-both cap alphabetic; }
+.mini-steps { text-align: left; }
 
 /* FAQ toggle drawn as bars, so the plus/minus is geometrically centered in its ring */
 .faq summary::after {
@@ -755,5 +757,5 @@ html[lang^="zh"] h1, html[lang^="zh"] h2 { letter-spacing: 0.06em; }
 }
 
 /* Single-line form controls show their value centered (textarea stays left for writing) */
-.field input, .field select { text-align: center; text-align-last: center; }
+.field input, .field select, .hc-row input { text-align: center; text-align-last: center; }
 .field input::-webkit-date-and-time-value { text-align: center; }
