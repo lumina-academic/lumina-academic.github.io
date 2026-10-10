@@ -721,7 +721,8 @@ html[lang^="zh"] h1, html[lang^="zh"] h2 { letter-spacing: 0.06em; }
 .step:not(:last-child)::after { left: calc(50% + 34px); right: calc(-50% + 14px); }
 
 .sub-card { text-align: center; }
-.sub-card .sub-points { justify-items: center; }
+/* Bullets share one left edge; the block itself sits centered */
+.sub-card .sub-points { grid-template-columns: fit-content(100%); justify-content: center; justify-items: start; text-align: left; }
 .sub-more { justify-self: center; }
 
 /* Home service cards */
@@ -736,3 +737,23 @@ html[lang^="zh"] h1, html[lang^="zh"] h2 { letter-spacing: 0.06em; }
 .footer-tag { margin-inline: auto; }
 .footer-contacts { display: grid; justify-items: center; }
 .footer-bottom { text-align: center; }
+
+/* Digits sit dead-center in their circles: lining figures (Cormorant's default old-style ones
+   drop below the line) and a line box trimmed to the glyphs */
+.step-num, .mini-steps li::before { line-height: 1; font-variant-numeric: lining-nums; text-box: trim-both cap alphabetic; }
+
+/* FAQ toggle drawn as bars, so the plus/minus is geometrically centered in its ring */
+.faq summary::after {
+  content: "";
+  background:
+    linear-gradient(var(--accent-bright), var(--accent-bright)) center / 12px 2px no-repeat,
+    linear-gradient(var(--accent-bright), var(--accent-bright)) center / 2px 12px no-repeat;
+}
+.faq details[open] summary::after {
+  content: "";
+  background: linear-gradient(var(--accent-ink), var(--accent-ink)) center / 12px 2px no-repeat, var(--accent);
+}
+
+/* Single-line form controls show their value centered (textarea stays left for writing) */
+.field input, .field select { text-align: center; text-align-last: center; }
+.field input::-webkit-date-and-time-value { text-align: center; }
